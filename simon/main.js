@@ -75,12 +75,14 @@ function after30(){
 }
     console.log(userNum);
 
-    //stampa in pagina dei numeri scelti dall'user
-    
+    //stampa in pagina i numeri randomici ai fini di verifica per l'user
+    document.getElementById("randomNum").innerHTML = "I numeri estratti dal pc erano: " + numeri;    
+
+    //stampa in pagina dei numeri scelti dall'user   
     document.getElementById("num").innerHTML = "I numeri che hai inserito sono: " + userNum;    
 
     //e i numeri che ha "preso" col suo punteggio
-    document.getElementById("risultato").innerHTML = "Hai inserito " + numeriPresi + " numeri che c'erano già! Quindi hai totalizzato " + punti + " punti!"
+    document.getElementById("risultato").innerHTML = "Hai inserito " + numeriPresi + " numeri che c'erano già! Hai totalizzato " + punti + " punti!"
 }
 
 
