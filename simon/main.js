@@ -37,7 +37,7 @@ numeriPresi = 0;
 
 
 //creo una funzione che dopo 30 secondi chieda all'utente 5 numeri
-var memory = setTimeout(after30, 3000);
+var memory = setTimeout(after30, 30000);
 
 function after30(){
 
@@ -106,7 +106,7 @@ function numRandom(min,max){
 //funzione che chiede all'utente di inserire un numero tramite prompt
 function userNumber(sceltaNum){
 
-    sceltaNum = parseInt(prompt("Dimmi un numero 1 a 20!"));
+    sceltaNum = parseInt(prompt("Dimmi un numero da 1 a 20!"));
 
     return sceltaNum
 
