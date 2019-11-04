@@ -33,11 +33,11 @@ punti = 0;
 
 
 //creo una variabile per verificare quanti numeri dell'array originale ho beccato
-numeriPresi = 0;
+numeriPresi = [];
 
 
 //creo una funzione che dopo 30 secondi chieda all'utente 5 numeri
-var memory = setTimeout(after30, 30000);
+var memory = setTimeout(after30, 3000);
 
 function after30(){
 
@@ -55,15 +55,13 @@ function after30(){
 
             userNum.push(userChoice);
 
-            if(numeri.includes(userChoice)){ //verifico se il numero inserito non sia presente nell'array di numeri randomici e in caso aggiungo +1 al punteggio
+            if(numeri.includes(userChoice)){ //verifico se il numero inserito sia presente nell'array di numeri randomici e in caso aggiungo +1 al punteggio
 
-                numeriPresi++;
-            
-            } else{
+                numeriPresi.push(userChoice);
 
                 punti++;
-
-            }
+            
+            } 
 
         }
 
@@ -82,7 +80,7 @@ function after30(){
     document.getElementById("num").innerHTML = "I numeri che hai inserito sono: " + userNum;    
 
     //e i numeri che ha "preso" col suo punteggio
-    document.getElementById("risultato").innerHTML = "Hai inserito " + numeriPresi + " numeri che c'erano già! Hai totalizzato " + punti + " punti!"
+    document.getElementById("risultato").innerHTML = "I numeri " + numeriPresi + " erano nell'elenco! Hai totalizzato " + punti + " punti!"
 }
 
 
