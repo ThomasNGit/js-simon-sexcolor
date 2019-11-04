@@ -79,6 +79,7 @@ function after30(){
     
     document.getElementById("num").innerHTML = "I numeri che hai inserito sono: " + userNum;    
 
+    //e i numeri che ha "preso" col suo punteggio
     document.getElementById("risultato").innerHTML = "Hai inserito " + numeriPresi + " numeri che c'erano già! Quindi hai totalizzato " + punti + " punti!"
 }
 
